@@ -1,38 +1,510 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+/* Navbar */
+
+.navbar {
+    /* border: 1px solid red; */
+    padding: 10px;
+    background-color: #04133a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+    /* border: 1px solid blue; */
+    display: flex;
+    gap: 5px;
+    width: fit-content;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* logo-image box */
+.logo>div:first-child {
+    /* border: 1px solid green; */
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.logo>div:first-child>img {
+    width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* logo-text */
+.name {
+    pointer-events: none;
+    width: 155px;
+    left: 0;
+    top: 0;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.name>h2 {
+    white-space: nowrap;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.name h2:nth-child(1) {
+    background: linear-gradient(to left, #480da1, #ec633d);
+    -webkit-text-stroke: 2px transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.name h2:nth-child(2) {
+    color: #3f7cdd;
+    animation: waterWave 4s ease-in-out infinite;
+}
+
+@keyframes waterWave {
+
+    0%,
+    100% {
+        clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+
+    50% {
+        clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
+}
+
+
+
+/* navbar options */
+.nav-options {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-options {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-options>div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-options>div>button {
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 4px;
+    background-color: #141431;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px 15px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.nav-options>div>button:hover {
+    background-color: #222b69;
+}
+
+
+.nav-options>div>button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    letter-spacing: 0.5px;
+}
+
+.nav-options>div>button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.nav-options>div>button:hover span {
+    padding-right: 20px;
+}
+
+.nav-options>div>button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* Nav-Hambarger icon */
+
+.navbar>button:last-child {
+    background-color: transparent;
+}
+
+.navbar>button:last-child>svg {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+
+/* Drawer-section */
+.navbar>button:last-child+div {
+    top: 65px !important;
+}
+
+.drawer {
+    background-color: #0d012c !important;
+    color: #fcfcfc !important;
+    padding-bottom: 20px;
+}
+
+.drawer>button:first-child {
+    top: 10px !important;
+    color: white;
+    font-size: 12px;
+}
+
+.drawer>header:nth-child(2) {
+    padding: 10px !important;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.drawer>div:nth-child(3)>div {
+    margin: 8px 0px;
+    font-size: 24px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+
+/* Home-page */
+#home {
+    position: relative;
+    height: 95vh;
+    width: 100vw;
+    background: url('https://jameswaweru.vercel.app/static/media/background.78f65f0d57d328c7311a.png');
+    z-index: 1;
+
+    /* background: -webkit-linear-gradient(to right, #49a09d, #5f2c82); */
+    /* Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right, #306187, #5f2c82); */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: white;
+}
+
+#home::after {
+    z-index: 2;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#1a202c78, rgba(0, 0, 0, 0.818));
+}
+
+#home>div:first-child{
+
+}
+
+
+/* Projects section */
+.projects {
+    width: fit-content;
+    margin: 50px auto;
+    gap: 60px 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Porject - card */
+.ProjectCard {
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border-radius: 8px;
+    width: 350px;
+    height: 400px;
+    background: #0000;
+    overflow: hidden;
+}
+
+.cardImg {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 200px;
+    background-size: cover;
+    background-position: top;
+    transition: ease-in-out 8s;
+}
+
+.ProjectCard:hover .cardImg {
+    background-position: bottom;
+}
+
+.ProjectCard>div:last-child>div {
+    justify-content: center;
+}
+
+.ProjectCard>div:last-child>div>button>svg {
+    margin-left: 10px;
+}
+
+
+
+
+/* Github-stats images */
+.github-stats {
+    margin: 50px;
+    gap: 20px;
+}
+
+
+
+/* Github stats */
+.react-activity-calendar {
+    background-color: #1a202c;
+    color: #fff;
+}
+
+
+
+
+
+/* Contact-me */
+.contact-me {
+    margin: 50px 0px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact-me>div:nth-child(2) {
+    gap: 150px;
+}
+
+/* svg box */
+.contact-me>div:nth-child(2)>div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:600px;
+}
+
+/* ! form section */
+.form-section {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #141431;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.inputBox {
+    position: relative;
+    width: 100%;
+}
+
+.inputBox>input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+    background-color: #141431;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+}
+
+.inputBox>span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.25);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+    color: #49a09d;
+    transform: translateX(10px) translateY(-10px);
+    font-size: 0.65em;
+    border-left: 1px solid #49a09d;
+    border-right: 1px solid #49a09d;
+    padding: 2px 5px;
+    background-color: #141431;
+    letter-spacing: 0.2em;
+}
+
+.inputBox input:valid,
+.inputBox input:focus {
+    border: 1px solid #49a09d;
+}
+
+.form-section>div:nth-child(4)>textarea {
+    min-width: 360px;
+    min-height: 100px;
+    background-color: #141431;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+}
+
+
+
+.social-icons {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 4px;
+    border: 1px dashed #fcfcfc;
+    animation: clockwiseSpin 5s linear infinite;
+}
+
+.social-icons:nth-child(3) img {
+    width: 100%;
+    height: 100%;
+}
+
+.social-icons div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #fcfcfc;
+    animation: antiClockWiseSpin 5s linear infinite;
+}
+
+
+
+@keyframes clockwiseSpin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes antiClockWiseSpin {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+
+
+
+
+@media all and (max-width:768px) {
+
+    /* Navbar */
+    .nav-options>div>button span {
+        font-size: 12px;
+    }
+
+    .logo>div:first-child {
+        width: 25px;
+    }
+
+    .name {
+        width: 80px;
+    }
+
+    .name>h2 {
+        font-size: 20px;
+    }
+
+    /* github-stats */
+    .github-stats {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 320px) {
+
+    #home>div:nth-child(1)>div:nth-child(1)>h2 {
+        text-align: center;
+    }
+
+    #home>div:nth-child(1)>div:nth-child(1)>p {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    #home>div:nth-child(1)>div:nth-child(2)>img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .ProjectCard {
+        margin-inline: auto;
+        width: 90%;
+    }
+
+    /* github-stats */
+    .github-stats {
+        flex-direction: column;
+    }
+
+
+    .react-activity-calendar {
+        width: 85%;
+    }
+
+    /*! Special class inherited from footer section don't use anywhere else  */
+    .styles_footer__ltlVl {
+        font-size: 10px !important;
+    }
+
+
+    .contact-me>div:nth-child(2) {
+        gap: 50px;
+    }
+
+    .contact-me>div:nth-child(2) {
+        width: 100%;
+    }
+
+    .contact-me>div:nth-child(2)>div:nth-child(1) {
+        width: 85%;
+    }
+
+    .form-section {
+        width: 90%;
+    }
+
+    .form-section>div:nth-child(4)>textarea {
+        min-width: 100%;
+    }
+
 }
