@@ -1,20 +1,27 @@
-import { Box, Button, Flex, Heading, HStack, Text } from '@chakra-ui/react'
+import { Box, Button, Flex, Heading, HStack, Link, Text } from '@chakra-ui/react'
 import React from 'react'
 import { BiLinkExternal } from "react-icons/bi";
 import { VscGithub } from "react-icons/vsc";
 
-const ProjectCard = ({ cardImg }) => {
+const ProjectCard = ({ id, title, image, description, techStack, github, liveDemo }) => {
   return (
     <Flex flexDirection="column" className='ProjectCard'>
-      <Box className='cardImg' backgroundImage={cardImg}/>
+      <Box className='cardImg' backgroundImage={image} />
       <Box p="15px">
-        <Heading size="md">Title show</Heading>
-        <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eos suscipit amet aut quisquam quidem quasi quo illum.</Text>
+        <Heading size="md">{title}</Heading>
+        <Text color="whiteAlpha.400">Tech Stacks: {
+          techStack.join(", ")
+        }</Text>
+        <Text>{description}</Text>
       </Box>
       <Box p="10px">
         <HStack>
-          <Button colorScheme="facebook">Live Demo <BiLinkExternal/></Button>
-          <Button colorScheme="facebook">Code Base <VscGithub/></Button>
+          <Link href={liveDemo} target="_blank">
+            <Button colorScheme="facebook">Live Demo <BiLinkExternal /></Button>
+          </Link>
+          <Link href={github} target="_blank">
+            <Button colorScheme="facebook">Code Base <VscGithub /></Button>
+          </Link>
         </HStack>
       </Box>
     </Flex>

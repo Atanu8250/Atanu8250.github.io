@@ -1,5 +1,5 @@
 import { Box, Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay, Heading, Image, Input, Link, useDisclosure } from '@chakra-ui/react'
-import React, { useState } from 'react'
+import React from 'react'
 import logo from '../Images/favicon.png'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { VscChromeClose } from 'react-icons/vsc'
@@ -21,22 +21,22 @@ const Navbar = () => {
             </Box>
             <Box display={["none", 'none', 'none', 'flex']} className="nav-options">
                 <Box>
-                    <Button><span>Home</span></Button>
+                    <Button><Link href="#"><span>Home</span></Link></Button>
                 </Box>
                 <Box>
-                    <Button><span>About me</span></Button>
+                    <Button><Link href="#aboutMe"><span>About me</span></Link></Button>
                 </Box>
                 <Box>
-                    <Button><span>Skills</span></Button>
+                    <Button><Link href="#skills"><span>Skills</span></Link></Button>
                 </Box>
                 <Box>
-                    <Button><span>Projects</span></Button>
+                    <Button><Link href="#projects"><span>Projects</span></Link></Button>
                 </Box>
                 <Box>
-                    <Button><span>Resume</span></Button>
+                    <Button><Link href="https://1drv.ms/b/s!AjfSNL-3_Mfng0dVyp7QsLXQT92h?e=uncCFn" target="_blank"><span>Resume</span></Link></Button>
                 </Box>
                 <Box>
-                    <Button><span>Contact</span></Button>
+                    <Button><Link href="#contactMe"><span>Contact</span></Link></Button>
                 </Box>
             </Box>
             <Button ref={btnRef} display={["block", 'block', 'block', 'none']} onClick={() => {
@@ -51,6 +51,7 @@ const Navbar = () => {
                 placement='right'
                 onClose={onClose}
                 finalFocusRef={btnRef}
+                size="full"
             >
                 <DrawerOverlay />
                 <DrawerContent className="drawer">
@@ -68,12 +69,12 @@ const Navbar = () => {
                     </DrawerHeader>
 
                     <DrawerBody>
-                        <Box><Link href='#home' onClick={() => onClose()}>Home</Link></Box>
-                        <Box><Link href='#' onClick={() => onClose()}>About me</Link></Box>
-                        <Box><Link href='#' onClick={() => onClose()}>Skills</Link></Box>
-                        <Box><Link href='#' onClick={() => onClose()}>Projects</Link></Box>
-                        <Box><Link href='#' onClick={() => onClose()}>Resume</Link></Box>
-                        <Box><Link href='#' onClick={() => onClose()}>Contact</Link></Box>
+                        <Box><Link href='#' onClick={() => onClose()}>Home</Link></Box>
+                        <Box><Link href='#aboutMe' onClick={() => onClose()}>About me</Link></Box>
+                        <Box><Link href='#skills' onClick={() => onClose()}>Skills</Link></Box>
+                        <Box><Link href='#projects' onClick={() => onClose()}>Projects</Link></Box>
+                        <Box><Link href='#resume' onClick={() => onClose()}>Resume</Link></Box>
+                        <Box><Link href='#contactMe' onClick={() => onClose()}>Contact</Link></Box>
                     </DrawerBody>
                 </DrawerContent>
             </Drawer>
