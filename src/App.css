@@ -11,6 +11,13 @@ html {
     scroll-behavior: smooth;
 }
 
+.App {
+    background-color: #1a202c;
+    color: #fcfcfc;
+}
+
+
+
 /* global class */
 .themeText {
     color: #6c63ff;
@@ -325,6 +332,7 @@ html {
 #aboutMe>h2:nth-child(1) {
     text-align: center;
     margin: 50px 0px -50px;
+    letter-spacing: 1px;
 }
 
 /* svg */
@@ -369,6 +377,7 @@ html {
 #skills>h2:nth-child(1) {
     text-align: center;
     margin: 50px 0px;
+    letter-spacing: 1px;
 }
 
 /* Main skill box */
@@ -408,6 +417,7 @@ html {
 .skills>div>h2 {
     text-align: center;
     margin: 20px 0px;
+    letter-spacing: 1px;
 }
 
 .skills>div>div:nth-child(2) {
@@ -467,6 +477,10 @@ html {
     background-color: #1a202c;
 }
 
+#projects>h2:nth-child(1) {
+    letter-spacing: 1px;
+}
+
 #projects>div:nth-child(2) {
     width: 80vw;
     margin: 50px auto;
@@ -477,30 +491,86 @@ html {
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
     border-radius: 8px;
     width: 350px;
-    height: 400px;
+    height: 415px;
     background: #0000;
     overflow: hidden;
 }
 
+.ProjectCard>div:nth-child(2) {
+    padding: 15px;
+}
+
+.ProjectCard>div:nth-child(3) {
+    padding: 10px;
+}
+
 .cardImg {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    height: 200px;
+    height: 205px;
     background-size: cover;
     background-position: top;
     transition: ease-in-out 8s;
 }
 
+/* Slide the image on hover */
 .ProjectCard:hover .cardImg {
     background-position: bottom;
 }
 
+
+.ProjectCard>div:nth-child(2)>div:nth-child(1) {
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* project type tag */
+.ProjectCard>div:nth-child(2)>div:nth-child(1)>span {
+    height: fit-content;
+
+}
+
+/* title of the project */
+.ProjectCard>div:nth-child(2)>div:nth-child(1)>h2 {
+    font-size: 24px;
+    letter-spacing: 1.5px;
+}
+
+/* tech stack of the project */
+.ProjectCard>div:nth-child(2)>p:nth-child(2) {
+    margin: 4px 0px;
+    font-size: 14px;
+    background: linear-gradient(to left, #7112ff, #ec633d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* description part */
+.ProjectCard>div:nth-child(2)>p:nth-child(3) {
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 20px;
+    color: #eee;
+}
+
 .ProjectCard>div:last-child>div {
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.ProjectCard>div:last-child>div a {
+    text-decoration: none;
+}
+
+/* project card buttons */
+
+.ProjectCard>div:last-child>div>a>button {
+    background-color: #111a2f;
+    color: #e6e6e6;
 }
 
 .ProjectCard>div:last-child>div>a>button>svg {
-    margin-left: 10px;
+    margin-left: 5px;
 }
+
 
 
 /* Github stats */
@@ -512,8 +582,9 @@ html {
     transition: all 400ms ease-in-out;
 }
 
-#githubStats>h2 {
+#githubStats>h2:first-child {
     margin: 20px 0px;
+    letter-spacing: 1px;
 }
 
 /* Github-stats images */
@@ -533,7 +604,7 @@ html {
 
 /* Contact-me */
 #contactMe {
-    margin: 50px 0px;
+    margin-top: 50px;
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -548,6 +619,7 @@ html {
 
 #contactMe>h2 {
     margin: 20px auto;
+    letter-spacing: 1px;
 }
 
 #contactMe>div:nth-child(2) {
@@ -652,6 +724,11 @@ html {
     margin-top: -20px;
     border-radius: 20px;
     cursor: pointer;
+    transition: none !important;
+}
+
+.form-section>form>input:nth-child(4):active {
+    transform: scale(0.95)
 }
 
 .form-section>form>input:nth-child(4):hover {
@@ -684,6 +761,20 @@ html {
     overflow: hidden;
     background-color: #fcfcfc;
     animation: antiClockWiseSpin 5s linear infinite;
+}
+
+
+/* Footer part */
+#footer {
+    justify-content: space-between;
+    padding: 10px 50px;
+    font-size: 20px;
+    background-color: #111a2f;
+}
+
+#footer>p:first-child {
+    font-size: 16px;
+    color: #eeeeee;
 }
 
 
@@ -831,7 +922,7 @@ html {
 
     /* about me */
     #aboutMe>h2:nth-child(1) {
-        margin: 50px 0px 10px;
+        margin: 50px 0px 50px;
     }
 
     #aboutMe>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>svg {
@@ -844,6 +935,13 @@ html {
     }
 
     /* Skill */
+    #skills>h2:nth-child(1) {
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: -50px;
+        letter-spacing: 1px;
+    }
+
     .skill {
         width: 60px;
     }
@@ -856,6 +954,25 @@ html {
     .ProjectCard {
         margin-inline: auto;
         width: 90%;
+        padding: 0px;
+    }
+
+
+    .ProjectCard>div:nth-child(2) {
+        padding: 10px;
+    }
+
+    .ProjectCard>div:nth-child(3) {
+        padding: 6px;
+    }
+
+    .ProjectCard>div:nth-child(2)>div:nth-child(1)>h2 {
+        font-size: 16px;
+    }
+
+    /* buttons */
+    .ProjectCard>div:last-child>div>a>button {
+        font-size: 12px;
     }
 
     /* github-stats */
@@ -894,6 +1011,9 @@ html {
         width: 100%;
     }
 
+    #footer>p:first-child {
+        display: none;
+    }
 }
 
 

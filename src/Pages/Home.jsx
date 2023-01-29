@@ -29,13 +29,14 @@ const Home = () => {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: matchMedia("(max-width: 1024px)").matches ? 1 : 3,
+        slidesToShow: matchMedia("(max-width: 320px)").matches ? 1 : matchMedia("(max-width: 1024px)").matches ? 2 : 3,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000
+        autoplaySpeed: 4000
     };
 
     useEffect(() => {
+        // * it's from Aos library to to use scroll designing
         Aos.init()
     }, [])
 
@@ -113,7 +114,7 @@ const Home = () => {
                         </Flex>
 
                         <Box>
-                            <Text>An ambitious and self-motivated webdeveloper with a considerable technicalskill who possesses self-discipline and ability to work with minimum of super vision.Able to play a key role in website development to ensure maximum accessibility,user experience and usability.A  quick-learner who can absorb new ideas and can communicate clearly and effectively. Have 1200+ hours of coding experience and solved around 600+ DSA problems.</Text>
+                            <Text>An ambitious and self-motivated webdeveloper with a considerable technical skill who possesses self-discipline and ability to work with minimum of super vision.Able to play a key role in website development to ensure maximum accessibility,user experience and usability.A  quick-learner who can absorb new ideas and can communicate clearly and effectively. Have 1200+ hours of coding experience and solved around 600+ DSA problems.</Text>
                         </Box>
                     </Flex>
                 </Flex>
@@ -186,7 +187,9 @@ const Home = () => {
                     <Image src="https://github-readme-streak-stats.herokuapp.com/?user=Atanu8250&layout=compact&hide_border=true&theme=radical" alt="Current Streaks" />
                 </Center>
 
-                <Center><GitHubCalendar username="atanu8250" children={<ReactTooltip html />} /></Center>
+                <Center>
+                    <GitHubCalendar username="atanu8250" color="#4a8af4" children={<ReactTooltip html />} />
+                </Center>
             </Box>
 
 
@@ -259,6 +262,12 @@ const Home = () => {
                     </Box >
                 </Flex >
             </Box >
+
+            {/* footer */}
+            <Flex id='footer'>
+                <Text>© Portfolio by Atanu k. | All rights reserved.</Text>
+                <Text>Made with 💖 by Atanu</Text>
+            </Flex>
         </Box >
     )
 }
