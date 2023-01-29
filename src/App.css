@@ -886,7 +886,7 @@ html {
 }
 
 /* Mobile part */
-@media all and (max-width: 320px) {
+@media all and (max-width: 425px) {
 
     #home>div:nth-child(1)>div:nth-child(1)>h2 {
         text-align: center;
@@ -922,7 +922,7 @@ html {
 
     /* about me */
     #aboutMe>h2:nth-child(1) {
-        margin: 50px 0px 50px;
+        margin: 50px 0px -50px;
     }
 
     #aboutMe>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>svg {

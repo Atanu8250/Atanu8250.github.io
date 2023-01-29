@@ -29,7 +29,7 @@ const Home = () => {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: matchMedia("(max-width: 320px)").matches ? 1 : matchMedia("(max-width: 1024px)").matches ? 2 : 3,
+        slidesToShow: matchMedia("(max-width: 425px)").matches ? 1 : matchMedia("(max-width: 1024px)").matches ? 2 : 3,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 4000
