@@ -10,6 +10,8 @@ import { useEffect } from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { GoCloudDownload } from 'react-icons/go'
+import { FaPhoneAlt } from 'react-icons/fa'
+import { SiGmail } from 'react-icons/si'
 
 import { projects, skills } from '../Utils/data';
 
@@ -74,7 +76,7 @@ const Home = () => {
         <Box>
             <Box id='home'>
                 <Flex flexDirection={['column-reverse', 'column-reverse', 'row']} m="auto" justifyContent="space-around" alignItems="center" h="100%">
-                    <Box>
+                    <Box data-aos="fade-down">
                         <Heading>Hey! <span className='themeText'>I'm</span></Heading>
                         <Box className='content'>
                             <Heading fontSize="3.3em" className='text' data-text="Atanu Karmakar"><span className='themeText'>Atanu Karmakar</span></Heading>
@@ -87,7 +89,7 @@ const Home = () => {
                             </a>
                         </HStack>
                     </Box>
-                    <Box>
+                    <Box data-aos="fade-down">
                         <Svg1 />
                     </Box>
                 </Flex>
@@ -98,11 +100,11 @@ const Home = () => {
             <Box id="aboutMe">
                 <Heading>About <span className='themeText'>me</span></Heading>
                 <Flex flexDirection={['column-reverse', 'column-reverse', 'column-reverse', 'row']} alignItems="center" h="100%">
-                    <div>
+                    <div data-aos="fade-right">
                         <Svg3 />
                     </div>
 
-                    <Flex>
+                    <Flex data-aos="fade-left">
                         <Flex w="100%" gap="10%" justifyContent="center">
                             <Image
                                 borderRadius='full'
@@ -131,8 +133,13 @@ const Home = () => {
                         <Heading size="lg">Front<span className='themeText'>end</span></Heading>
                         <Box>
                             {
-                                skills.filter((el) => el.tag === "frontend").map(skill => <Box key={skill.id} className="skill">
-                                    <Box><Image src={skill.icon} /></Box>
+                                skills.filter((el) => el.tag === "frontend").map(skill => <Box
+                                    key={skill.id}
+                                    className="skill"
+                                    data-aos="zoom-in-up">
+                                    <Box>
+                                        <Image src={skill.icon} />
+                                    </Box>
                                     <Text>{skill.title}</Text>
                                 </Box>)
                             }
@@ -142,8 +149,13 @@ const Home = () => {
                         <Heading size="lg">Back<span className='themeText'>end</span></Heading>
                         <Box>
                             {
-                                skills.filter((el) => el.tag === "backend").map(skill => <Box key={skill.id} className="skill">
-                                    <Box><Image src={skill.icon} /></Box>
+                                skills.filter((el) => el.tag === "backend").map(skill => <Box
+                                    key={skill.id}
+                                    className="skill"
+                                    data-aos="zoom-in-down">
+                                    <Box>
+                                        <Image src={skill.icon} />
+                                    </Box>
                                     <Text>{skill.title}</Text>
                                 </Box>)
                             }
@@ -153,8 +165,12 @@ const Home = () => {
                         <Heading size="lg">Platforms <span className='themeText'>& Tools</span></Heading>
                         <Box>
                             {
-                                skills.filter((el) => el.tag === "platform").map(skill => <Box key={skill.id} className="skill">
-                                    <Box><Image src={skill.icon} /></Box>
+                                skills.filter((el) => el.tag === "platform").map(skill => <Box
+                                    key={skill.id} className="skill"
+                                    data-aos="zoom-in">
+                                    <Box>
+                                        <Image src={skill.icon} />
+                                    </Box>
                                     <Text>{skill.title}</Text>
                                 </Box>)
                             }
@@ -218,12 +234,22 @@ const Home = () => {
                             </div>
                             <input type="submit" value="Send Message" />
                         </form>
+                        <Flex className='contact-info'>
+                            <HStack>
+                                <SiGmail color="#e34133"/>
+                                <Text>atanu20uparsole@gmail.com</Text>
+                            </HStack>
+                            <HStack>
+                                <FaPhoneAlt color="#00a14f"/>
+                                <Text>+91 81013 03481</Text>
+                            </HStack>
+                        </Flex>
                         <Flex gap={["10px", "20px", "20px", "40px"]}>
-                            <Link target="_blank">
+                            <Link href='https://wa.me/918101303481' target="_blank">
                                 <Tooltip label='+91 81013 03481'>
                                     <Box className='social-icons'>
                                         <Box>
-                                            <Image w="100%" src="https://i.ibb.co/1057jXJ/png-transparent-telephone-logo-iphone-telephone-call-smartphone-phone-electronics-text-trademark-thu.png" />
+                                            <Image w="100%" src="https://brandlogos.net/wp-content/uploads/2018/10/whatsapp-logo.png" />
                                         </Box>
                                     </Box>
                                 </Tooltip>

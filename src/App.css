@@ -24,6 +24,34 @@ html {
 }
 
 
+/* Cursor */
+.cursor {
+    z-index: 100;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border: 3px solid #16a05d;
+    border-radius: 50%;
+    transition-duration: 100ms;
+    transition-timing-function: ease-out;
+    pointer-events: none;
+    cursor: no-drop;
+    animation: 1.5s cubic-bezier(0.5, 0, 0.5, 1) 0s normal none infinite running fa-heart;
+}
+
+.cursor::after {
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    content: "";
+    top: 50%;
+    left: 50%;
+    border: 2px solid #ee3e38;
+    box-shadow: 0 0 25px 4px #ffffff;
+    border-radius: 50%;
+    animation: 1.5s cubic-bezier(0.5, 0, 0.5, 1) 0s normal none infinite running fa-heart-in;
+}
+
 
 /* Navbar */
 
@@ -41,7 +69,6 @@ html {
 }
 
 .logo {
-    /* border: 1px solid blue; */
     display: flex;
     gap: 5px;
     width: fit-content;
@@ -322,6 +349,7 @@ html {
     height: 100vh;
     background-color: #1a202c;
     padding: 0px 20px;
+    overflow: hidden;
 }
 
 #aboutMe * {
@@ -539,6 +567,7 @@ html {
 .ProjectCard>div:nth-child(2)>p:nth-child(2) {
     margin: 4px 0px;
     font-size: 14px;
+    font-weight: 600;
     background: linear-gradient(to left, #7112ff, #ec633d);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -735,6 +764,15 @@ html {
     background-color: #212151;
     color: #e0eff2;
     text-shadow: -2px 1px 0 #3a50d9, -4px 3px 0 #0a0e27;
+}
+
+.contact-info {
+    font-size: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: -15px 0px;
 }
 
 .social-icons {
@@ -1014,6 +1052,10 @@ html {
     #footer>p:first-child {
         display: none;
     }
+
+    #footer {
+        justify-content: center;
+    }
 }
 
 
@@ -1203,6 +1245,42 @@ html {
 
     100% {
         clip: rect(83px, auto, 40px, 30px);
+    }
+}
+
+@keyframes fa-heart {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.3)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+@keyframes fa-heart-in {
+    0% {
+        transform: scale(1) translate(-50%, -50%);
+    }
+
+    25% {
+        transform: scale(1.5) translate(-30%, -30%);
+    }
+
+    50% {
+        transform: scale(1) translate(-50%, -50%);
+    }
+
+    75% {
+        transform: scale(1.5) translate(-30%, -30%);
+    }
+
+    100% {
+        transform: scale(1) translate(-50%, -50%);
     }
 }
 

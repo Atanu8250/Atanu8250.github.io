@@ -12,7 +12,7 @@ const ProjectCard = ({ title, type, image, description, techStack, github, liveD
           <Heading size="md">{title}</Heading>
           <Badge variant='outline' colorScheme='green'>{type}</Badge>
         </Flex>
-        <Text color="whiteAlpha.400">Tech Stacks: {
+        <Text>Tech Stacks: {
           techStack.join(", ")
         }</Text>
         <Text>{description}</Text>
