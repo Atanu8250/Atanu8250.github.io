@@ -81,8 +81,7 @@ const Home = () => {
                         <Text>Am a software Developer passionate and experienced in building Web applications.</Text>
                         <HStack className='hireMe'>
                             <a href={Resume} download="Atanu_Karmakar_Resume">
-                                <Button>Resume <GoCloudDownload />
-                                </Button>
+                                <Button>Resume <GoCloudDownload /></Button>
                             </a>
                         </HStack>
                     </Box>
