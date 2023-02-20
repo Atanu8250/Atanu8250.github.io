@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.89de5770.css",
-    "main.js": "/static/js/main.3bc7faae.js",
+    "main.js": "/static/js/main.93479565.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/Atanu_Karmakar_Resume.pdf": "/static/media/Atanu_Karmakar_Resume.04da59ade2589f01de3b.pdf",
     "static/media/favicon.png": "/static/media/favicon.877f850414db61caa2c9.png",
@@ -11,11 +11,11 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.89de5770.css.map": "/static/css/main.89de5770.css.map",
-    "main.3bc7faae.js.map": "/static/js/main.3bc7faae.js.map",
+    "main.93479565.js.map": "/static/js/main.93479565.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.89de5770.css",
-    "static/js/main.3bc7faae.js"
+    "static/js/main.93479565.js"
   ]
 }
