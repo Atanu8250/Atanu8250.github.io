@@ -105,7 +105,7 @@ export const skills = [
 export const projects = [
     {
         id: 1,
-        title: "Netlify PM",
+        title: "Neifty PM",
         type: "Individual",
         image: "https://user-images.githubusercontent.com/94675329/212766385-81cad39c-a83e-4a08-87de-5a539e12ef8d.png",
         description: "Nifty, it's a remote collaboration hub to manage Projects, tasks, communication all in one place. Here you can collaborate with your team within an easy way.",
