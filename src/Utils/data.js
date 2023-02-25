@@ -107,7 +107,7 @@ export const projects = [
     {
         id: 1,
         title: "ForeignBazar",
-        type: "Individual",
+        type: "E-COMMERCE",
         image: "https://user-images.githubusercontent.com/94675329/212765286-55e5183b-598b-4648-96b6-1417b234b1b9.png",
         description: "ForeignBazar is an e-commerce website, where you can take a look on all daily needs like Clothes, Cosmetics etc. And you can go for order them. It's have the admin functionality.",
         techStack: ["React", "CSS", "ReactJS", "Chakra-UI"],
@@ -117,7 +117,7 @@ export const projects = [
     {
         id: 2,
         title: "GadgetRambo",
-        type: "Collaborative",
+        type: "E-COMMERCE",
         image: "https://user-images.githubusercontent.com/94675329/215067790-242b6566-714a-4eaf-b992-63b466f04c08.png",
         description: "GadgetRambo is a technology review, news and e-commerce platform. Here we provided full e-commerce flow and also the admin part.",
         techStack: ["Typescript", "Next.js", "Redux", "CSS", "Firebase", "thunk", "chakra-ui", "MUI"],
@@ -127,7 +127,7 @@ export const projects = [
     {
         id: 3,
         title: "YouTube clone",
-        type: "Individual",
+        type: "OTT PLATFORM",
         image: "https://user-images.githubusercontent.com/94675329/212769255-f619312f-a91f-42cf-8f49-cfde9ef8d282.PNG",
         description: "In this YouTube Clone You can search for any Videos and at the time of watching a video you will get Recommendation also. You can Do Filter by View, Alphabet, Popularity.",
         techStack: ["HTML", "CSS", "JavaScript"],
@@ -137,7 +137,7 @@ export const projects = [
     {
         id: 4,
         title: "Neifty PM",
-        type: "Individual",
+        type: "PROJECT MANAGER",
         image: "https://user-images.githubusercontent.com/94675329/212766385-81cad39c-a83e-4a08-87de-5a539e12ef8d.png",
         description: "Nifty, it's a remote collaboration hub to manage Projects, tasks, communication all in one place. Here you can collaborate with your team within an easy way.",
         techStack: ["HTML", "CSS", "JavaScript"],
@@ -147,7 +147,7 @@ export const projects = [
     {
         id: 5,
         title: "Health-Dr.",
-        type: "Collaborative",
+        type: "DIET MENTOR",
         image: "https://user-images.githubusercontent.com/94675329/212766892-aa364775-05a3-49c1-acf9-5fb07bb1c5b9.png",
         description: "Health-Dr. website is used to track your health-diet. Here you can set the goal to have a fitness full body and our website will track your fitness and health",
         techStack: ["HTML", "CSS", "JavaScript"],
@@ -157,7 +157,7 @@ export const projects = [
     {
         id: 6,
         title: "Pablo Parking",
-        type: "Collaborative",
+        type: "PARKING WEB APP",
         image: "https://user-images.githubusercontent.com/94675329/212767301-b159c959-43fe-4c9c-8655-93d021829ab5.png",
         description: "This project based on vehicle parking system created based on LLD (Low Level Designing) concept. Here you can book a slot to park your car.",
         techStack: ["HTML", "CSS", "JavaScript"],
