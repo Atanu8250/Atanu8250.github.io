@@ -80,7 +80,7 @@ const Home = () => {
                         </Box>
                         <Text>Am a software Developer passionate and experienced in building Web applications.</Text>
                         <HStack className='hireMe'>
-                            <a href={Resume} download="Atanu_Karmakar_Resume">
+                            <a href={Resume} download="fw21_1249-Atanu-Karmakar-Resume">
                                 <Button>Resume <GoCloudDownload /></Button>
                             </a>
                         </HStack>
