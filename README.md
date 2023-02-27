@@ -24,7 +24,7 @@ Hi, My name is Atanu Karmakar, Here you will able to see the deatails about me.
 ***
 
 ### :small_blue_diamond: Github Statistics
-<img src="https://user-images.githubusercontent.com/94675329/221532846-602545a5-e13b-456d-8cfb-b1bb4e25bcbc.PNG" />
+<img src="https://user-images.githubusercontent.com/94675329/221533542-10e7d3dd-a2ef-4a0d-b5e8-ee0f8e2160cd.PNG" />
 
 ***
 
