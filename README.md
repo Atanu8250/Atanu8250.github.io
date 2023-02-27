@@ -4,7 +4,7 @@ Hi, My name is Atanu Karmakar, Here you will able to see the deatails about me.
 
 ***
 ### :small_blue_diamond: Info 
-<img src="https://user-images.githubusercontent.com/94675329/221503674-6a8bf973-5785-4800-8ec9-5ce5a59f6c12.PNG" />
+<img src="https://user-images.githubusercontent.com/94675329/221532606-e50b03b1-2c08-434f-8a9e-6b95630648aa.PNG" />
 
 ***
 
@@ -24,12 +24,14 @@ Hi, My name is Atanu Karmakar, Here you will able to see the deatails about me.
 ***
 
 ### :small_blue_diamond: Github Statistics
-<img src="https://user-images.githubusercontent.com/94675329/221504430-13f5dacd-878a-4e1d-8ce2-c68a8b1dc9e1.PNG" />
+<img src="https://user-images.githubusercontent.com/94675329/221532846-602545a5-e13b-456d-8cfb-b1bb4e25bcbc.PNG" />
 
 ***
 
 ### :small_blue_diamond: Contact me form
-<img src="https://user-images.githubusercontent.com/94675329/221504535-9ce2e619-7552-4fb7-8c31-6b7cd9635df7.PNG" />
+<img src="https://user-images.githubusercontent.com/94675329/221532881-7289493c-a5eb-426c-8054-c6e23994ff58.PNG" />
+
+
 
 ## :large_blue_diamond: Mobile view
 | Info part | About me | Technical Skills | Featured Projects | Github Statistics | Contact Me |
