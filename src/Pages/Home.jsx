@@ -79,7 +79,7 @@ const Home = () => {
                             <Heading fontSize="3.3em" className='text' data-text="Atanu Karmakar"><span className='themeText'>Atanu Karmakar</span></Heading>
                         </Box>
                         <Text>Am a software Developer passionate and experienced in building Web applications.</Text>
-                        <HStack className='hireMe'>
+                        <HStack className='hireMe' onClick={() => { window.open("https://1drv.ms/b/s!AjfSNL-3_Mfng0dVyp7QsLXQT92h?e=uncCFn", '_blank') }}>
                             <a href={Resume} download="fw21_1249-Atanu-Karmakar-Resume">
                                 <Button>Resume <GoCloudDownload /></Button>
                             </a>
@@ -232,11 +232,11 @@ const Home = () => {
                         </form>
                         <Flex className='contact-info'>
                             <HStack>
-                                <SiGmail color="#e34133"/>
+                                <SiGmail color="#e34133" />
                                 <Text>atanu20uparsole@gmail.com</Text>
                             </HStack>
                             <HStack>
-                                <FaPhoneAlt color="#00a14f"/>
+                                <FaPhoneAlt color="#00a14f" />
                                 <Text>+91 81013 03481</Text>
                             </HStack>
                         </Flex>
