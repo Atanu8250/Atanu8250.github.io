@@ -122,7 +122,7 @@ export const projects = [
         description: "GadgetRambo is a technology review, news and e-commerce platform. Here we provided full e-commerce flow and also the admin part.",
         techStack: ["Typescript", "Next.js", "Redux", "CSS", "Firebase", "thunk", "chakra-ui", "MUI"],
         github: "https://github.com/Atanu8250/GadgetRambo",
-        liveDemo: "https://gadget-rambo.netlify.app/"
+        liveDemo: "https://gadget-rambo.vercel.app/"
     },
     {
         id: 3,
