@@ -39,7 +39,6 @@ Hi, My name is Atanu Karmakar, Here you will able to see the deatails about me.
 <img src="https://user-images.githubusercontent.com/94675329/221532881-7289493c-a5eb-426c-8054-c6e23994ff58.PNG" />
 
 
-
 ## :large_blue_diamond: Mobile view
 | Info part | About me | Technical Skills | Featured Projects | Github Statistics | Contact Me |
 |-----------|----------|------------------|-------------------|-------------------|------------|
