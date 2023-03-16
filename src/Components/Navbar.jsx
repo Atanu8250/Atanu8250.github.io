@@ -4,7 +4,7 @@ import logo from '../Images/favicon.png'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { VscChromeClose } from 'react-icons/vsc'
 
-import Resume from '../Resume/Atanu_Karmakar_Resume.pdf'
+import Resume from '../Resume/fw21_1249-Atanu-Karmakar-Resume.pdf'
 
 const Navbar = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()

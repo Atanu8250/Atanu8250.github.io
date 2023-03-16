@@ -20,7 +20,7 @@ import Svg1 from '../Components/Svg1';
 import Svg2 from '../Components/Svg2';
 import Svg3 from '../Components/Svg3';
 import Slider from 'react-slick';
-import Resume from '../Resume/Atanu_Karmakar_Resume.pdf'
+import Resume from '../Resume/fw21_1249-Atanu-Karmakar-Resume.pdf'
 
 const Home = () => {
 
