@@ -233,7 +233,7 @@ const Home = () => {
                         <Flex className='contact-info'>
                             <HStack>
                                 <SiGmail color="#e34133" />
-                                <Text>atanu20uparsole@gmail.com</Text>
+                                <Text>atanu.karmakar201@gmail.com</Text>
                             </HStack>
                             <HStack>
                                 <FaPhoneAlt color="#00a14f" />
@@ -271,8 +271,8 @@ const Home = () => {
                                 </Tooltip>
                             </Link>
 
-                            <Link href="https://mail.google.com/mail/u/0/#inbox?compose=VpCqJKjFpWNfPwzpLxQBSsJZcJXkQQztWwwvdLtVMggsDRTMHPmGbsDwfWxzhNwdNlhDTZL" target="_blank">
-                                <Tooltip label='atanu20uparsole@gmail.com'>
+                            <Link href="mailto:atanu.karmakar201@gmail.com" target="_blank">
+                                <Tooltip label='atanu.karmakar201@gmail.com'>
                                     <Box className='social-icons'>
                                         <Box>
                                             <Image w="100%" src="https://1000logos.net/wp-content/uploads/2021/05/Gmail-logo.png" />
