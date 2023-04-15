@@ -20,7 +20,7 @@ import Svg1 from '../Components/Svg1';
 import Svg2 from '../Components/Svg2';
 import Svg3 from '../Components/Svg3';
 import Slider from 'react-slick';
-import Resume from '../Resume/fw21_1249-Atanu-Karmakar-Resume.pdf'
+import Resume from '../Resume/Atanu-Karmakar-Resume.pdf'
 
 const Home = () => {
 
@@ -80,7 +80,7 @@ const Home = () => {
                         </Box>
                         <Text>Am a software Developer passionate and experienced in building Web applications.</Text>
                         <HStack className='hireMe' onClick={() => { window.open("https://1drv.ms/b/s!AjfSNL-3_Mfng0dVyp7QsLXQT92h?e=uncCFn", '_blank') }}>
-                            <a href={Resume} download="fw21_1249-Atanu-Karmakar-Resume">
+                            <a href={Resume} download="Atanu-Karmakar-Resume">
                                 <Button>Resume <GoCloudDownload /></Button>
                             </a>
                         </HStack>

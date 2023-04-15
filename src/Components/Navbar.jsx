@@ -4,7 +4,7 @@ import logo from '../Images/favicon.png'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { VscChromeClose } from 'react-icons/vsc'
 
-import Resume from '../Resume/fw21_1249-Atanu-Karmakar-Resume.pdf'
+import Resume from '../Resume/Atanu-Karmakar-Resume.pdf'
 
 const Navbar = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -35,7 +35,7 @@ const Navbar = () => {
                     <Button><Link href="#projects"><span>Projects</span></Link></Button>
                 </Box>
                 <Box>
-                    <Button onClick={()=>{window.open("https://1drv.ms/b/s!AjfSNL-3_Mfng0dVyp7QsLXQT92h?e=uncCFn", '_blank')}}><a href={Resume} download="fw21_1249-Atanu-Karmakar-Resume"><span>Resume</span></a></Button>
+                    <Button onClick={()=>{window.open("https://1drv.ms/b/s!AjfSNL-3_Mfng0dVyp7QsLXQT92h?e=uncCFn", '_blank')}}><a href={Resume} download="Atanu-Karmakar-Resume"><span>Resume</span></a></Button>
                 </Box>
                 <Box>
                     <Button><Link href="#contactMe"><span>Contact</span></Link></Button>
