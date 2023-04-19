@@ -103,7 +103,16 @@ export const skills = [
 ]
 
 export const projects = [
-    
+    {
+        id: 0,
+        title: 'Kanban-Board',
+        type: 'Task-Manager',
+        image: 'https://user-images.githubusercontent.com/94675329/233132228-987af021-4518-44d1-a2b8-b83cbc109464.PNG',
+        description: 'Kanban-Board is Task management web-application, where you can create different boards and for each specific board and create different tasks with subtasks. Drag & drop to change the status of a task',
+        techStack: ['React', 'Chakra-UI', 'Express.js', 'Node.js'],
+        github: 'https://github.com/Atanu8250/Kanban-Board',
+        liveDemo: 'https://kanban-board-by-atanu.netlify.app/'
+    },
     {
         id: 1,
         title: "ForeignBazar",
