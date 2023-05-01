@@ -55,6 +55,11 @@ export const skills = [
         tag: "backend"
     },
     {
+        icon: "https://img.icons8.com/?size=512&id=33039&format=png",
+        title: "AWS",
+        tag: "backend"
+    },
+    {
         icon: "https://img.icons8.com/color/512/express-js.png",
         title: "Express.js",
         tag: "backend"
