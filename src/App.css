@@ -11,6 +11,12 @@ html {
     scroll-behavior: smooth;
 }
 
+h2::selection,
+p::selection {
+    background-color: #4c47b0;
+    color: #fff;
+}
+
 .App {
     background-color: #1a202c;
     color: #fcfcfc;
