@@ -190,8 +190,9 @@ const Home = () => {
             {/* Github Statistics */}
             <Box id="githubStats">
                 <Heading textAlign="center">Github <span className='themeText'>stats</span></Heading>
-                <Center>
+                <Center className='github-stats'>
                     <Image src="https://github-readme-stats.vercel.app/api/top-langs/?username=Atanu8250&layout=compact&hide_border=true&theme=radical" alt="Most used languages" />
+                    <Image src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=atanu8250&theme=radical" alt="Github Stats" />
                 </Center>
 
                 <Center className='github-stats'>
