@@ -42,8 +42,8 @@ const Home = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_ot57meh', 'template_82m6hki', form.current, 's7qxzSHyvTMO1qNhD').then((result) => {
-            console.log(result.text);
+        emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_SERVICE_TEMPLATE, form.current, process.env.REACT_APP_SERVICE_SECRET).then((result) => {
+
             toast({
                 position: 'top-right',
                 title: 'Email Sent ✔',
@@ -52,12 +52,12 @@ const Home = () => {
                 duration: 5000,
                 isClosable: true,
             })
-            form.current.from_name.value = "";
-            form.current.user_email.value = "";
-            form.current.message.value = "";
+            
+            form.current.reset();
         }, (error) => {
             console.log(error.text);
             toast({
+                position: 'top-right',
                 title: 'Email Not sent.',
                 description: "There is some error",
                 status: 'warning',
@@ -223,7 +223,7 @@ const Home = () => {
                                 <span>Full Name</span>
                             </div>
                             <div className='inputBox'>
-                                <input type="email" name="user_email" required />
+                                <input type="email" name="from_mail" required />
                                 <span>Email</span>
                             </div>
                             <div>
