@@ -113,7 +113,7 @@ export const projects = [
         title: 'Kanban-Board',
         type: 'Task-Manager',
         image: 'https://user-images.githubusercontent.com/94675329/233132228-987af021-4518-44d1-a2b8-b83cbc109464.PNG',
-        description: 'Kanban-Board is Task management web-application, where you can create different boards and for each specific board and create different tasks with subtasks. Drag & drop to change the status of a task',
+        description: 'Kanban-Board is Task management web-application, where you can create different boards and for each specific board and create different tasks with subtasks',
         techStack: ['React', 'Chakra-UI', 'Express.js', 'Node.js'],
         github: 'https://github.com/Atanu8250/Kanban-Board',
         liveDemo: 'https://kanban-board-by-atanu.netlify.app/'
@@ -130,6 +130,16 @@ export const projects = [
     },
     {
         id: 2,
+        title: 'First-AIM',
+        type: 'Multi-Player Game',
+        image: 'https://github.com/Atanu8250/fast-aim/blob/main/frontend/src/Asset/Images/HomePage.png?raw=true',
+        description: 'Fast Aim is a gaming Web-application that allows playing both Single Player and Multi-Player. Try to beat your opponent',
+        techStack: ['React', 'Chakra-UI', 'TypeScript', 'Express.js', 'Web-Socket', 'Node.js'],
+        github: 'https://github.com/Atanu8250/fast-aim',
+        liveDemo: 'https://fast-aim-game.vercel.app/'
+    },
+    {
+        id: 3,
         title: "GadgetRambo",
         type: "E-COMMERCE",
         image: "https://user-images.githubusercontent.com/94675329/215067790-242b6566-714a-4eaf-b992-63b466f04c08.png",
@@ -139,7 +149,7 @@ export const projects = [
         liveDemo: "https://gadget-rambo.vercel.app/"
     },
     {
-        id: 3,
+        id: 4,
         title: "YouTube clone",
         type: "OTT PLATFORM",
         image: "https://user-images.githubusercontent.com/94675329/212769255-f619312f-a91f-42cf-8f49-cfde9ef8d282.PNG",
@@ -149,7 +159,7 @@ export const projects = [
         liveDemo: "https://youtube-cloned-by-atanu.netlify.app/"
     },
     {
-        id: 4,
+        id: 5,
         title: "Neifty PM",
         type: "PROJECT MANAGER",
         image: "https://user-images.githubusercontent.com/94675329/212766385-81cad39c-a83e-4a08-87de-5a539e12ef8d.png",
@@ -159,7 +169,7 @@ export const projects = [
         liveDemo: "https://nifty-cloned-by-atanu.netlify.app/"
     },
     {
-        id: 5,
+        id: 6,
         title: "Health-Dr.",
         type: "DIET MENTOR",
         image: "https://user-images.githubusercontent.com/94675329/212766892-aa364775-05a3-49c1-acf9-5fb07bb1c5b9.png",
@@ -169,7 +179,7 @@ export const projects = [
         liveDemo: "https://health-dr-by-team-masai-warriors.netlify.app/"
     },
     {
-        id: 6,
+        id: 7,
         title: "Pablo Parking",
         type: "PARKING WEB APP",
         image: "https://user-images.githubusercontent.com/94675329/212767301-b159c959-43fe-4c9c-8655-93d021829ab5.png",
