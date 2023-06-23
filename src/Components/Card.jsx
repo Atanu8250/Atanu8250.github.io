@@ -23,8 +23,8 @@ const ProjectCard = ({ title, type, image, description, techStack, github, liveD
           <Link href={liveDemo} target="_blank">
             <Button>Live Demo <BiLinkExternal /></Button>
           </Link>
-          <Link href={github} target="_blank">
-            <Button>Code Base <VscGithub /></Button>
+          <Link href={github} target="_blank" style={{pointerEvents: github ? '' : 'none'}}>
+            <Button style={{backgroundColor: github ? '#111a2f' : '#111a2fbc', color: github ? "#fff": "#8d8d8d"}}>Code Base <VscGithub /></Button>
           </Link>
         </HStack>
       </Box>
