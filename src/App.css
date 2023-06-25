@@ -628,11 +628,11 @@ p::selection {
     gap: 20px;
 }
 
-.github-stats:nth-of-type(1)>img:first-child{
+.github-stats:nth-of-type(1)>img:first-child {
     width: 23%;
 }
 
-.github-stats:nth-of-type(1)>img:last-child{
+.github-stats:nth-of-type(1)>img:last-child {
     width: 44%;
 }
 
@@ -752,10 +752,12 @@ p::selection {
     width: 100%;
     min-height: 100px;
     background-color: #141431;
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    border: 1px solid #ffffff40;
     padding: 10px;
     outline: none;
     border-radius: 5px;
+    resize: none;
+    scrollbar-width: none;
 }
 
 .form-section>form>input:nth-child(4) {
@@ -899,7 +901,7 @@ p::selection {
     }
 
     /* github stats */
-    .github-stats img{
+    .github-stats img {
         width: 95% !important;
     }
 
@@ -1043,7 +1045,7 @@ p::selection {
         flex-direction: column;
     }
 
-    .github-stats img{
+    .github-stats img {
         width: 85%;
     }
 

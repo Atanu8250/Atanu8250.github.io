@@ -52,7 +52,7 @@ const Home = () => {
                 duration: 5000,
                 isClosable: true,
             })
-            
+
             form.current.reset();
         }, (error) => {
             console.log(error.text);
@@ -67,7 +67,6 @@ const Home = () => {
         });;
 
     };
-
 
     return (
         <Box>
@@ -105,9 +104,8 @@ const Home = () => {
                             <Image
                                 borderRadius='full'
                                 boxSize='250px'
-                                src='https://avatars.githubusercontent.com/u/94675329?v=4'
-                                alt='Dan Abramov' />
-
+                                src='/portfolio-profile-pic.png'
+                                alt='Atanu Karmakar' />
                             <Svg3 />
                         </Flex>
 
