@@ -4,7 +4,7 @@ import logo from '../Images/favicon.png'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { VscChromeClose } from 'react-icons/vsc'
 
-import Resume from '../Resume/Atanu-Karmakar-Resume.pdf'
+import Resume from '../Resume/Atanu-karmakar-Resume.pdf'
 
 const Navbar = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -14,7 +14,7 @@ const Navbar = () => {
         <Box className='navbar'>
             <Box className='logo'>
                 <Box>
-                    <Image src={logo} />
+                    <Image src={logo} alt='Portfolio logo' />
                 </Box>
                 <Box className='name'>
                     <Heading>Atanu K.</Heading>
@@ -61,7 +61,7 @@ const Navbar = () => {
                     <DrawerHeader>
                         <Box display={['flex', 'none']} className='logo'>
                             <Box>
-                                <Image src={logo} />
+                                <Image src={logo} alt='Portfolio logo' />
                             </Box>
                             <Box className='name'>
                                 <Heading>Atanu K.</Heading>

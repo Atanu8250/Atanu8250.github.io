@@ -20,7 +20,7 @@ import Svg1 from '../Components/Svg1';
 import Svg2 from '../Components/Svg2';
 import Svg3 from '../Components/Svg3';
 import Slider from 'react-slick';
-import Resume from '../Resume/Atanu-Karmakar-Resume.pdf'
+import Resume from '../Resume/Atanu-karmakar-Resume.pdf'
 
 const Home = () => {
 
@@ -105,7 +105,7 @@ const Home = () => {
                                 borderRadius='full'
                                 boxSize='250px'
                                 src='/portfolio-profile-pic.png'
-                                alt='Atanu Karmakar' />
+                                alt='Atanu Karmakar Avatar' />
                             <Svg3 />
                         </Flex>
 
@@ -132,7 +132,7 @@ const Home = () => {
                                     className="skill"
                                     data-aos="zoom-in-up">
                                     <Box>
-                                        <Image src={skill.icon} />
+                                        <Image src={skill.icon} alt={`${skill.title} icon`} />
                                     </Box>
                                     <Text>{skill.title}</Text>
                                 </Box>)
@@ -148,7 +148,7 @@ const Home = () => {
                                     className="skill"
                                     data-aos="zoom-in-down">
                                     <Box>
-                                        <Image src={skill.icon} />
+                                        <Image src={skill.icon} alt={`${skill.title} icon`} />
                                     </Box>
                                     <Text>{skill.title}</Text>
                                 </Box>)
@@ -163,7 +163,7 @@ const Home = () => {
                                     key={skill.id} className="skill"
                                     data-aos="zoom-in">
                                     <Box>
-                                        <Image src={skill.icon} />
+                                        <Image src={skill.icon} alt={`${skill.title} icon`} />
                                     </Box>
                                     <Text>{skill.title}</Text>
                                 </Box>)
@@ -189,13 +189,13 @@ const Home = () => {
             <Box id="githubStats">
                 <Heading textAlign="center">Github <span className='themeText'>stats</span></Heading>
                 <Center className='github-stats'>
-                    <Image src="https://github-readme-stats.vercel.app/api/top-langs/?username=Atanu8250&layout=compact&hide_border=true&theme=radical" alt="Most used languages" />
-                    <Image src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=atanu8250&theme=radical" alt="Github Stats" />
+                    <Image src="https://github-readme-stats.vercel.app/api/top-langs/?username=Atanu8250&layout=compact&hide_border=true&theme=radical" alt="Atanu's most used languages" />
+                    <Image src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=atanu8250&theme=radical" alt="Atanu's github Stats" />
                 </Center>
 
                 <Center className='github-stats'>
-                    <Image src="https://github-readme-stats.vercel.app/api?username=Atanu8250&show_icons=true&locale=en&layout=compact&hide_border=true&theme=radical" alt="Github stats" />
-                    <Image src="https://github-readme-streak-stats.herokuapp.com/?user=Atanu8250&layout=compact&hide_border=true&theme=radical" alt="Current Streaks" />
+                    <Image src="https://github-readme-stats.vercel.app/api?username=Atanu8250&show_icons=true&locale=en&layout=compact&hide_border=true&theme=radical" alt="Atanu's github stats" />
+                    <Image src="https://github-readme-streak-stats.herokuapp.com/?user=Atanu8250&layout=compact&hide_border=true&theme=radical" alt="Atanu's current Streaks" />
                 </Center>
 
                 <Center>
@@ -244,7 +244,7 @@ const Home = () => {
                                 <Tooltip label='+91 81013 03481'>
                                     <Box className='social-icons'>
                                         <Box>
-                                            <Image w="100%" src="https://brandlogos.net/wp-content/uploads/2018/10/whatsapp-logo.png" />
+                                            <Image w="100%" src="https://brandlogos.net/wp-content/uploads/2018/10/whatsapp-logo.png" alt='Whatsapp brand logo'/>
                                         </Box>
                                     </Box>
                                 </Tooltip>
@@ -254,7 +254,7 @@ const Home = () => {
                                 <Tooltip label='Atanu Karmakar'>
                                     <Box className='social-icons'>
                                         <Box>
-                                            <Image w="100%" src="https://openvisualfx.com/wp-content/uploads/2019/10/linkedin-icon-logo-png-transparent.png" />
+                                            <Image w="100%" src="https://openvisualfx.com/wp-content/uploads/2019/10/linkedin-icon-logo-png-transparent.png" alt='Linkedin brand logo' />
                                         </Box>
                                     </Box>
                                 </Tooltip>
@@ -264,7 +264,7 @@ const Home = () => {
                                 <Tooltip label='Atanu8250'>
                                     <Box className='social-icons'>
                                         <Box>
-                                            <Image w="100%" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" />
+                                            <Image w="100%" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt='Github brand logo' />
                                         </Box>
                                     </Box>
                                 </Tooltip>
@@ -274,7 +274,7 @@ const Home = () => {
                                 <Tooltip label='atanu.karmakar201@gmail.com'>
                                     <Box className='social-icons'>
                                         <Box>
-                                            <Image w="100%" src="https://1000logos.net/wp-content/uploads/2021/05/Gmail-logo.png" />
+                                            <Image w="100%" src="https://1000logos.net/wp-content/uploads/2021/05/Gmail-logo.png" alt='Gmail brand logo' />
                                         </Box>
                                     </Box >
                                 </Tooltip>
