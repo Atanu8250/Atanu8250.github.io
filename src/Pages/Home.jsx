@@ -77,7 +77,7 @@ const Home = () => {
                         <Box className='content'>
                             <Heading fontSize="3.3em" className='text' data-text="Atanu Karmakar"><span className='themeText'>Atanu Karmakar</span></Heading>
                         </Box>
-                        <Text>Am a software Developer passionate and experienced in building Web applications.</Text>
+                        <Text>Am a Software Developer, passionate and experienced in building Web applications.</Text>
                         <HStack className='hireMe' onClick={() => { window.open("https://drive.google.com/file/d/1jBa-w_YRCtrqAD7xrFaRw20mwkTO6QhH/view", '_blank') }}>
                             <a href={Resume} download="Atanu-Karmakar-Resume">
                                 <Button>Resume <GoCloudDownload /></Button>
