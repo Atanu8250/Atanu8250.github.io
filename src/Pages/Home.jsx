@@ -110,7 +110,7 @@ const Home = () => {
                         </Flex>
 
                         <Box>
-                            <Text>An ambitious and self-motivated webdeveloper with a considerable technical skill who possesses self-discipline and ability to work with minimum of super vision.Able to play a key role in website development to ensure maximum accessibility,user experience and usability.A  quick-learner who can absorb new ideas and can communicate clearly and effectively. Have 1200+ hours of coding experience and solved around 600+ DSA problems.</Text>
+                            <Text>An ambitious and self-motivated web developer with a considerable technical skill who possesses self-discipline and ability to work with minimum of super vision. Able to play a key role in website development to ensure maximum accessibility, user experience and usability.A  quick-learner who can absorb new ideas and can communicate clearly and effectively. Have 1200+ hours of coding experience and solved around 600+ DSA problems.</Text>
                         </Box>
                     </Flex>
                 </Flex>
