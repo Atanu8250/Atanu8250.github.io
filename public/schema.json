@@ -1,0 +1,32 @@
+{
+     "@context": "https://schema.org",
+     "@type": "Person",
+     "name": "Atanu Karmakar",
+     "jobTitle": "Full Stack MERN Developer",
+     "description": "Showcasing innovative web apps and expert web development services by Atanu Karmakar.",
+     "url": "https://atanu8250.github.io/",
+     "sameAs": [
+          "https://www.linkedin.com/in/atanu-karmakar-dev/",
+          "https://github.com/Atanu8250",
+          "https://leetcode.com/u/Atanu_200/",
+          "https://x.com/Atanu_200"
+     ],
+     "worksFor": {
+          "@type": "Organization",
+          "name": "Yantramayaa Designs",
+          "url": "https://design.yantramayaa.com/"
+     },
+     "knowsAbout": [
+          "Web Development",
+          "MERN Stack",
+          "Web Socket",
+          "Custom Web Apps",
+          "Responsive Design"
+     ],
+     "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Kolkata",
+          "addressRegion": "West Bengal",
+          "addressCountry": "India"
+     }
+}

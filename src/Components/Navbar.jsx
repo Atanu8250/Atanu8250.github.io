@@ -1,6 +1,6 @@
 import { Box, Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay, Heading, Image, Link, useDisclosure } from '@chakra-ui/react'
 import React from 'react'
-import logo from '../Images/favicon.png'
+import logo from '../Images/favicon.webp'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { VscChromeClose } from 'react-icons/vsc'
 

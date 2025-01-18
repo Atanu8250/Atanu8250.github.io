@@ -30,7 +30,7 @@ const Home = () => {
     const settings = {
         dots: false,
         infinite: false,
-        slidesToShow: matchMedia("(max-width: 425px)").matches ? 1 : matchMedia("(max-width: 1024px)").matches ? 2 : 3,
+        slidesToShow: matchMedia("(max-width: 430px)").matches ? 1 : matchMedia("(max-width: 1024px)").matches ? 2 : 3,
         slidesToScroll: 1,
     };
 
@@ -104,7 +104,7 @@ const Home = () => {
                             <Image
                                 borderRadius='full'
                                 boxSize='250px'
-                                src='/portfolio-profile-pic.png'
+                                src='/portfolio-profile-pic.webp'
                                 alt='Atanu Karmakar Avatar' />
                             <Svg3 />
                         </Flex>

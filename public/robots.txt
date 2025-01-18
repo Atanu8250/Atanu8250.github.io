@@ -1,3 +1,5 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
+Allow: /
+Sitemap: https://atanu8250.github.io/sitemap.xml
 Disallow:

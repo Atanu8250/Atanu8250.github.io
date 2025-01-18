@@ -237,7 +237,7 @@ p::selection {
     position: relative;
     height: 95vh;
     width: 100%;
-    background: url('https://jameswaweru.vercel.app/static/media/background.78f65f0d57d328c7311a.png');
+    background: url('/public/background.webp');
     color: white;
 }
 
@@ -478,6 +478,7 @@ p::selection {
 }
 
 .skill>div {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -945,7 +946,7 @@ p::selection {
 }
 
 /* Mobile part */
-@media all and (max-width: 425px) {
+@media all and (max-width: 430px) {
 
     #home>div:nth-child(1)>div:nth-child(1)>h2 {
         text-align: center;
