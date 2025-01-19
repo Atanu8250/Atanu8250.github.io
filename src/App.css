@@ -410,7 +410,7 @@ p::selection {
 
 #skills>h2:nth-child(1) {
     text-align: center;
-    margin: 50px 0px;
+    margin: 50px 0px -50px;
     letter-spacing: 1px;
 }
 
@@ -497,14 +497,204 @@ p::selection {
 }
 
 
+.education-timeline,
+.experience-timeline {
+    position: relative;
+}
 
+.education-timeline>h2,
+.experience-timeline>h2 {
+    text-align: center;
+    margin: 50px 0px -50px;
+    letter-spacing: 1px;
+}
 
+/* Timeline */
+.timeline {
+    --TL-color: #4c47b0;
+    --TL-shine-color: rgba(76, 71, 176, 0.3);
+    position: relative;
+    margin: 50px auto;
+    padding: 40px 0;
+    width: 1000px;
+    box-sizing: border-box;
+}
 
+/* restrict float scoping */
+.timeline::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
+.timeline:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 80%;
+    background: #c5c5c5;
+}
 
+.timeline ul {
+    padding: 0;
+    margin: 0;
+}
 
+.timeline ul li {
+    list-style: none;
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
 
+.timeline ul li:nth-child(odd) {
+    float: left;
+    text-align: right;
+    clear: both;
+}
 
+.timeline ul li:nth-child(even) {
+    float: right;
+    text-align: left;
+    clear: both;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.content h2{
+    width: 100%;
+}
+
+.content p {
+    width: 100%;
+    color: #c9c9c9;
+}
+
+.content a:hover{
+    text-underline-offset: 3px;
+}
+
+.timeline ul li:nth-child(odd):before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 24px;
+    right: -6px;
+    background: var(--TL-color);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px var(--TL-shine-color);
+}
+
+.timeline ul li:nth-child(even):before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 24px;
+    left: -4px;
+    background: var(--TL-color);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px var(--TL-shine-color);
+}
+
+.timeline ul li h3 {
+    padding: 0;
+    margin: 0;
+    color: var(--TL-color);
+    font-weight: 600;
+}
+
+.timeline ul li p {
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.timeline ul li .time p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.timeline ul li:nth-child(odd) .time {
+    position: absolute;
+    top: 12px;
+    right: -165px;
+    margin: 0;
+    padding: 8px 16px;
+    background: var(--TL-color);
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px var(--TL-shine-color);
+}
+
+.timeline ul li:nth-child(even) .time {
+    position: absolute;
+    top: 12px;
+    left: -165px;
+    margin: 0;
+    padding: 8px 16px;
+    background: var(--TL-color);
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px var(--TL-shine-color);
+}
+
+.experience-timeline>.timeline ul li:nth-child(odd) .time{
+    right: -200px;
+}
+.experience-timeline>.timeline ul li:nth-child(even) .time{
+    left: -200px;
+}
+
+@media (max-width: 1000px) {
+    .timeline {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .timeline {
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    .timeline:before {
+        left: 20px;
+        height: 85%;
+    }
+
+    .timeline ul li:nth-child(odd),
+    .timeline ul li:nth-child(even) {
+        width: 100%;
+        text-align: left;
+        padding-left: 50px;
+        padding-bottom: 50px;
+    }
+
+    .timeline ul li:nth-child(odd):before,
+    .timeline ul li:nth-child(even):before {
+        top: -18px;
+        left: 16px;
+    }
+
+    .experience-timeline>.timeline ul li:nth-child(odd) .time,
+    .experience-timeline>.timeline ul li:nth-child(even) .time,
+    .timeline ul li:nth-child(odd) .time,
+    .timeline ul li:nth-child(even) .time {
+        top: -30px;
+        left: 50px;
+        right: inherit;
+    }
+}
+
+*/
 
 /* Projects section */
 #projects {

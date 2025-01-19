@@ -116,6 +116,47 @@ const Home = () => {
                 </Flex>
             </Box>
 
+            {/* Educational history */}
+            <Box className="education-timeline">
+                <Heading>Education
+                    <span className="themeText"> History</span>
+                </Heading>
+                <Box className='timeline'>
+                    <ul>
+                        <li>
+                            <Box className='content'>
+                                <Heading size="lg">Bachelor of Computer Application</Heading>
+                                <Text>
+                                    <Link href='https://www.ignou.ac.in/' target='_blank'>Indira Gandhi National Open University (IGNOU)</Link> | Kolkata</Text>
+                            </Box>
+                            <Box className='time'>
+                                <Text>2023 - Present</Text>
+                            </Box>
+                        </li>
+                        <li>
+                            <Box className='content'>
+                                <Heading size="lg">Full Stack Web Development (MERN)</Heading>
+                                <Text>
+                                <Link href='https://www.masaischool.com/' target='_blank'>Masai School</Link> (Remote) | Bengaluru</Text>
+                            </Box>
+                            <Box className='time'>
+                                <Text>2022 - 2023</Text>
+                            </Box>
+                        </li>
+                        <li>
+                            <Box className='content'>
+                                <Heading size="lg">Higher Secondary Education</Heading>
+                                <Text>
+                                    <Link href='https://g.co/kgs/D9GbXj2' target='_blank'>Rajgram Vivekananda Hindu Vidyalaya</Link> | Bankura</Text>
+                            </Box>
+                            <Box className='time'>
+                                <Text>2019 - 2021</Text>
+                            </Box>
+                        </li>
+                    </ul>
+                </Box>
+            </Box>
+
             {/* Technical Skills section */}
             <Box id="skills">
                 <Heading>
@@ -173,6 +214,45 @@ const Home = () => {
                 </Flex>
             </Box>
 
+            {/* Professional experience */}
+            <Box className="experience-timeline">
+                <Heading>Professional
+                    <span className="themeText"> Experience</span>
+                </Heading>
+                <Box className='timeline'>
+                    <ul>
+                        <li>
+                            <Box className='content'>
+                                <Heading size="lg">Senior Developer</Heading>
+                                <Text>
+                                    <Link href='https://design.yantramayaa.com/' target='_blank'>Yantramayaa Designs</Link> (Remote) | Vadodara, Gujarat</Text>
+                            </Box>
+                            <Box className='time'>
+                                <Text>Jun, 2024 - Present</Text>
+                            </Box>
+                        </li>
+                        <li>
+                            <Box className='content'>
+                                <Heading size="lg">Full Stack Developer</Heading>
+                                <Text>
+                                    <Link href='https://design.yantramayaa.com/' target='_blank'>Yantramayaa Designs</Link> (Remote) | Vadodara, Gujarat</Text>
+                            </Box>
+                            <Box className='time'>
+                                <Text>Jul, 2023 - Aug, 2024</Text>
+                            </Box>
+                        </li>
+                        <li>
+                            <Box className='content'>
+                                <Heading size="lg">Freelancing</Heading>
+                                <Text>Freelancing on Wordpress, College Projects</Text>
+                            </Box>
+                            <Box className='time'>
+                                <Text>Jan, 2023 - Jul, 2023</Text>
+                            </Box>
+                        </li>
+                    </ul>
+                </Box>
+            </Box>
 
             {/* show projects */}
             <Box id="projects">
@@ -244,7 +324,7 @@ const Home = () => {
                                 <Tooltip label='+91 81013 03481'>
                                     <Box className='social-icons'>
                                         <Box>
-                                            <Image w="100%" src="https://brandlogos.net/wp-content/uploads/2018/10/whatsapp-logo.png" alt='Whatsapp brand logo'/>
+                                            <Image w="100%" src="https://brandlogos.net/wp-content/uploads/2018/10/whatsapp-logo.png" alt='Whatsapp brand logo' />
                                         </Box>
                                     </Box>
                                 </Tooltip>

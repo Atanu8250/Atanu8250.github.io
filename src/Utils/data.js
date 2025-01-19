@@ -21,7 +21,7 @@ export const skills = [
     },
     {
         icon: "https://cdn-icons-png.flaticon.com/512/760/760457.png",
-        title: "react",
+        title: "React",
         tag: "frontend"
     },
     {
@@ -36,7 +36,7 @@ export const skills = [
     },
     {
         icon: "https://www.svgrepo.com/show/452093/redux.svg",
-        title: "redux",
+        title: "Redux",
         tag: "frontend"
     },
     {
@@ -117,6 +117,11 @@ export const skills = [
     {
         icon: "https://img.icons8.com/ios-filled/512/codepen.png",
         title: "CodePen",
+        tag: "platform"
+    },
+    {
+        icon: "https://img.icons8.com/color/480/figma--v1.png",
+        title: "Figma",
         tag: "platform"
     },
 
