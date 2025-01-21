@@ -1,10 +1,9 @@
-import './App.css';
-import Home from './Pages/Home';
-import Navbar from './Components/Navbar';
-import { Box } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react'
+import './App.css'
+import Navbar from './Components/Navbar'
+import Home from './Pages/Home'
 
 function App() {
-
 
   return (
     <div className="App" onMouseMove={(e) => {
@@ -14,7 +13,7 @@ function App() {
       <Navbar />
       <Home />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

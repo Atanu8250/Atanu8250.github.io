@@ -5,11 +5,11 @@ import emailjs from '@emailjs/browser';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 import GitHubCalendar from 'react-github-calendar';
-import ReactTooltip from 'react-tooltip';
+import { Tooltip as ReactTooltip } from 'react-tooltip';
 import { useEffect } from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { GoCloudDownload } from 'react-icons/go'
+import { LuCloudDownload } from 'react-icons/lu'
 import { FaPhoneAlt } from 'react-icons/fa'
 import { SiGmail } from 'react-icons/si'
 
@@ -42,7 +42,7 @@ const Home = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_SERVICE_TEMPLATE, form.current, process.env.REACT_APP_SERVICE_SECRET).then((result) => {
+        emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_SERVICE_TEMPLATE, form.current, import.meta.env.VITE_SERVICE_SECRET).then((result) => {
 
             toast({
                 position: 'top-right',
@@ -80,7 +80,7 @@ const Home = () => {
                         <Text>Am a Software Developer, passionate and experienced in building Web applications.</Text>
                         <HStack className='hireMe' onClick={() => { window.open("https://drive.google.com/file/d/1jBa-w_YRCtrqAD7xrFaRw20mwkTO6QhH/view", '_blank') }}>
                             <a href={Resume} download="Atanu-Karmakar-Resume">
-                                <Button>Resume <GoCloudDownload /></Button>
+                                <Button>Resume <LuCloudDownload /></Button>
                             </a>
                         </HStack>
                     </Box>
@@ -137,7 +137,7 @@ const Home = () => {
                             <Box className='content'>
                                 <Heading size="lg">Full Stack Web Development (MERN)</Heading>
                                 <Text>
-                                <Link href='https://www.masaischool.com/' target='_blank'>Masai School</Link> (Remote) | Bengaluru</Text>
+                                    <Link href='https://www.masaischool.com/' target='_blank'>Masai School</Link> (Remote) | Bengaluru</Text>
                             </Box>
                             <Box className='time'>
                                 <Text>2022 - 2023</Text>
