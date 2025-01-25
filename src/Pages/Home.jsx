@@ -7,8 +7,6 @@ import 'aos/dist/aos.css'
 import GitHubCalendar from 'react-github-calendar';
 import { Tooltip as ReactTooltip } from 'react-tooltip';
 import { useEffect } from 'react';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { LuCloudDownload } from 'react-icons/lu'
 import { FaPhoneAlt } from 'react-icons/fa'
 import { SiGmail } from 'react-icons/si'
@@ -19,20 +17,38 @@ import ProjectCard from '../Components/Card';
 import Svg1 from '../Components/Svg1';
 import Svg2 from '../Components/Svg2';
 import Svg3 from '../Components/Svg3';
-import Slider from 'react-slick';
 import Resume from '../Resume/Atanu-karmakar-Resume.pdf'
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+
+
+const responsive = {
+    superLargeDesktop: {
+        breakpoint: { max: 4000, min: 2200 },
+        items: 5
+    },
+    largeDesktop: {
+        breakpoint: { max: 2200, min: 1920 },
+        items: 4
+    },
+    desktop: {
+        breakpoint: { max: 1920, min: 1075 },
+        items: 3
+    },
+    tablet: {
+        breakpoint: { max: 1075, min: 780 },
+        items: 2
+    },
+    mobile: {
+        breakpoint: { max: 780, min: 0 },
+        items: 1
+    }
+};
 
 const Home = () => {
 
     const form = useRef();
     const toast = useToast()
-
-    const settings = {
-        dots: false,
-        infinite: false,
-        slidesToShow: matchMedia("(max-width: 430px)").matches ? 1 : matchMedia("(max-width: 1024px)").matches ? 2 : 3,
-        slidesToScroll: 1,
-    };
 
     useEffect(() => {
         // * it's from Aos library to to use scroll designing
@@ -257,11 +273,18 @@ const Home = () => {
             {/* show projects */}
             <Box id="projects">
                 <Heading textAlign="center">Featured <span className='themeText'>Projects</span></Heading>
-                <Slider {...settings}>
+                <Carousel
+                    containerClass="carousel-container"
+                    swipeable={true}
+                    draggable={true}
+                    showDots={false}
+                    keyBoardControl={true}
+                    responsive={responsive}
+                    infinite={false}>
                     {
-                        projects.map((project, i) => <ProjectCard key={i} {...project} />)
+                        projects.map((project) => <ProjectCard key={project.id} {...project} />)
                     }
-                </Slider>
+                </Carousel>
             </Box>
 
 
@@ -278,8 +301,8 @@ const Home = () => {
                     <Image src="https://github-readme-streak-stats.herokuapp.com/?user=Atanu8250&layout=compact&hide_border=true&theme=radical" alt="Atanu's current Streaks" />
                 </Center>
 
-                <Center>
-                    <GitHubCalendar username="atanu8250" color="#4a8af4" children={<ReactTooltip html />} />
+                <Center className='github-calendar'>
+                    <GitHubCalendar username="atanu8250" color="#4a8af4" children={<ReactTooltip />} />
                 </Center>
             </Box>
 

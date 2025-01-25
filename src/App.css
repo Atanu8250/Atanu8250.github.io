@@ -567,7 +567,7 @@ p::selection {
     padding-bottom: 20px;
 }
 
-.content h2{
+.content h2 {
     width: 100%;
 }
 
@@ -576,7 +576,7 @@ p::selection {
     color: #c9c9c9;
 }
 
-.content a:hover{
+.content a:hover {
     text-underline-offset: 3px;
 }
 
@@ -646,10 +646,11 @@ p::selection {
     box-shadow: 0 0 0 3px var(--TL-shine-color);
 }
 
-.experience-timeline>.timeline ul li:nth-child(odd) .time{
+.experience-timeline>.timeline ul li:nth-child(odd) .time {
     right: -200px;
 }
-.experience-timeline>.timeline ul li:nth-child(even) .time{
+
+.experience-timeline>.timeline ul li:nth-child(even) .time {
     left: -200px;
 }
 
@@ -709,18 +710,22 @@ p::selection {
     margin: 50px auto;
 }
 
+.carousel-container {
+    padding: 10px 0 10px 30px;
+}
+
 /* Porject - card */
 .ProjectCard {
-    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-    border-radius: 8px;
+    box-shadow: rgba(42, 45, 49, 0.4) 0px 0px 0px 2px, rgba(46, 49, 53, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border-radius: 4px;
     width: 350px;
-    height: 415px;
-    background: #0000;
+    background: #141431;
     overflow: hidden;
+    padding: 10px;
 }
 
 .ProjectCard>div:nth-child(2) {
-    padding: 15px;
+    padding: 15px 0;
 }
 
 .ProjectCard>div:nth-child(3) {
@@ -733,6 +738,8 @@ p::selection {
     background-size: cover;
     background-position: top;
     transition: ease-in-out 8s;
+    outline: 1px solid #f7f7f7;
+    outline-offset: 3px;
 }
 
 /* Slide the image on hover */
@@ -749,7 +756,6 @@ p::selection {
 /* project type tag */
 .ProjectCard>div:nth-child(2)>div:nth-child(1)>span {
     height: fit-content;
-
 }
 
 /* title of the project */
@@ -787,12 +793,24 @@ p::selection {
 /* project card buttons */
 
 .ProjectCard>div:last-child>div>a>button {
-    background-color: #111a2f;
+    all: unset;
+    display: flex;
+    align-items: center;
+    gap: 5px;
     color: #e6e6e6;
+    background: transparent;
+    border-radius: 0;
+    padding: 2px 5px;
+    border-bottom: 1px solid #3a50d9;
 }
 
-.ProjectCard>div:last-child>div>a>button>svg {
-    margin-left: 5px;
+/* Disabled button */
+.ProjectCard>div:last-child>div>a[href=""] {
+    pointer-events: none;
+}
+
+.ProjectCard>div:last-child>div>a[href=""]>button {
+    color: #8d8d8d8c;
 }
 
 
@@ -830,8 +848,9 @@ p::selection {
     color: #fff;
 }
 
-
-
+.github-calendar>.react-activity-calendar svg{
+    width: 100%;
+}
 
 
 /* Contact-me */
@@ -1117,13 +1136,17 @@ p::selection {
     }
 
 
+    .carousel-container {
+        padding: 10px 0 10px 10px;
+    }
+
     /* github-stats */
     .github-stats {
         flex-direction: column;
     }
 
-    .react-activity-calendar {
-        width: 90%;
+    .github-calendar{
+        padding: 0 50px;
     }
 
 
@@ -1163,6 +1186,10 @@ p::selection {
         width: 90vw;
     }
 
+    .content {
+        width: fit-content;
+        margin-inline: auto;
+    }
     .content .text {
         font-size: 22px;
     }
@@ -1199,10 +1226,13 @@ p::selection {
         white-space: nowrap;
     }
 
+    #projects>div:nth-child(2) {
+        width: 100vw;
+    }
+
     .ProjectCard {
         margin-inline: auto;
         width: 90%;
-        padding: 0px;
     }
 
 
@@ -1223,6 +1253,10 @@ p::selection {
         font-size: 12px;
     }
 
+    .carousel-container {
+        padding: 10px 0 10px 0;
+    }
+
     /* github-stats */
     #githubStats>div:nth-child(2)>img {
         width: 75%;
@@ -1238,9 +1272,9 @@ p::selection {
         width: 85%;
     }
 
-    .react-activity-calendar {
-        width: 85%;
-    }
+    .github-calendar{
+        padding: 0 20px;
+    }   
 
     /*! Special class inherited from footer section don't use anywhere else  */
     .styles_footer__ltlVl {

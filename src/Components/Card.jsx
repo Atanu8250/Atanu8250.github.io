@@ -8,7 +8,7 @@ const ProjectCard = ({ title, type, image, description, techStack, github, liveD
     <Flex flexDirection="column" className='ProjectCard'>
       <Box className='cardImg' backgroundImage={image} />
       <Box>
-        <Flex>
+        <Flex flexWrap={'wrap'} gap={'5px'}>
           <Heading size="md">{title}</Heading>
           <Badge variant='outline' colorScheme='green'>{type}</Badge>
         </Flex>
@@ -21,10 +21,10 @@ const ProjectCard = ({ title, type, image, description, techStack, github, liveD
       <Box>
         <HStack>
           <Link href={liveDemo} target="_blank">
-            <Button>Live Demo <BiLinkExternal /></Button>
+            <Button>Live Demo<BiLinkExternal /></Button>
           </Link>
-          <Link href={github} target="_blank" style={{pointerEvents: github ? '' : 'none'}}>
-            <Button style={{backgroundColor: github ? '#111a2f' : '#111a2fbc', color: github ? "#fff": "#8d8d8d"}}>Code Base <VscGithub /></Button>
+          <Link href={github} target="_blank">
+            <Button>Code Base<VscGithub /></Button>
           </Link>
         </HStack>
       </Box>
