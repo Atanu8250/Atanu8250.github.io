@@ -1189,6 +1189,7 @@ p::selection {
     .content {
         width: fit-content;
         margin-inline: auto;
+        overflow: hidden;
     }
     .content .text {
         font-size: 22px;
