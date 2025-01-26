@@ -10,33 +10,8 @@ Hi, My name is Atanu Karmakar, Here you will able to see the deatails about me.
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
 ***
-### :small_blue_diamond: Info 
-<img src="https://user-images.githubusercontent.com/94675329/221532606-e50b03b1-2c08-434f-8a9e-6b95630648aa.PNG" />
-
-***
-
-### :small_blue_diamond: About me
-<img src="https://user-images.githubusercontent.com/94675329/221503924-a5f0b20b-7176-4149-b0cd-afd3a7caf83e.PNG" />
-
-***
-
-### :small_blue_diamond: Technical Skills
-<img src="https://user-images.githubusercontent.com/94675329/221504148-efe80afd-8b3a-4815-be21-2e7557055e86.PNG" />
-
-***
-
-### :small_blue_diamond: Featured Projects
-<img src="https://user-images.githubusercontent.com/94675329/221504263-b5e2e17f-443e-4e61-aec8-c39a185cbb28.PNG" />
-
-***
-
-### :small_blue_diamond: Github Statistics
-<img src="https://user-images.githubusercontent.com/94675329/221533542-10e7d3dd-a2ef-4a0d-b5e8-ee0f8e2160cd.PNG" />
-
-***
-
-### :small_blue_diamond: Contact me form
-<img src="https://user-images.githubusercontent.com/94675329/221532881-7289493c-a5eb-426c-8054-c6e23994ff58.PNG" />
+### 🔹Web Page view
+<img src="https://github.com/user-attachments/assets/5ac6f685-8678-49b3-82bb-8aea08131c1d" alt="Atanu Karmakar Portfolio Web page view" />
 
 
 ## :large_blue_diamond: Mobile view
