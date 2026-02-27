@@ -17,7 +17,7 @@ import ProjectCard from '../Components/Card';
 import Svg1 from '../Components/Svg1';
 import Svg2 from '../Components/Svg2';
 import Svg3 from '../Components/Svg3';
-import Resume from '../Resume/Atanu-karmakar-Resume.pdf'
+import Resume from '../Resume/Atanu_Karmakar_Resume.pdf'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
