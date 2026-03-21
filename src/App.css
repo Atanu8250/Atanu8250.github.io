@@ -237,7 +237,9 @@ p::selection {
     position: relative;
     height: 95vh;
     width: 100%;
-    background: url('/background.webp');
+    background-image: url('/background.webp');
+    background-position: center;
+    background-size: cover;
     color: white;
 }
 

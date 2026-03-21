@@ -50,6 +50,11 @@ export const skills = [
         tag: "frontend"
     },
     {
+        icon: "https://img.icons8.com/color/512/storybook.png",
+        title: "Storybook",
+        tag: "frontend"
+    },
+    {
         icon: "https://img.icons8.com/fluency/512/node-js.png",
         title: "Node.js",
         tag: "backend"
@@ -218,4 +223,80 @@ export const projects = [
         github: "https://github.com/Vishwa9011/PabloParking",
         liveDemo: "https://pabloparking.netlify.app/"
     }
+]
+
+export const professionalExperience = [
+    {
+        id: 0,
+        role: "Frontend Developer",
+        companyName: "Sunbase",
+        companySite: "https://www.sunbasedata.com/",
+        workingLocation: "Remote",
+        companyAddress: "Orlando, Florida, United States",
+        timeline: "Mar, 2025 - Present",
+    },
+    {
+        id: 1,
+        role: "Full Stack Developer",
+        companyName: "Significant sports",
+        companySite: "https://www.significantsports.in/",
+        workingLocation: "Remote",
+        companyAddress: "Mumbai",
+        timeline: "Fab, 2025 - Mar, 2025",
+    },
+    {
+        id: 2,
+        role: "Senior Developer",
+        companyName: "Yantramayaa Designs",
+        companySite: "https://design.yantramayaa.com/",
+        workingLocation: "Remote",
+        companyAddress: "Vadodara, Gujarat",
+        timeline: "Jun, 2024 - Fab, 2025",
+    },
+    {
+        id: 3,
+        role: "Full Stack Developer",
+        companyName: "Yantramayaa Designs",
+        companySite: "https://design.yantramayaa.com/",
+        workingLocation: "Remote",
+        companyAddress: "Vadodara, Gujarat",
+        timeline: "Jul, 2023 - Aug, 2024",
+    },
+    {
+        id: 4,
+        role: "Freelancing",
+        companyName: "Freelancing on Wordpress, College Projects",
+        companySite: "",
+        workingLocation: "",
+        companyAddress: "",
+        timeline: "Jan, 2023 - Jul, 2023",
+    },
+]
+
+export const educationalHistory = [
+    {
+        id: 0,
+        degree: "Bachelor of Computer Application",
+        institution: "Indira Gandhi National Open University (IGNOU)",
+        institutionSite: "https://www.ignou.ac.in/",
+        location: "Kolkata",
+        timeline: "2023 - Present",
+    },
+    {
+        id: 1,
+        degree: "Full Stack Web Development (MERN)",
+        institution: "Masai School",
+        institutionSite: "https://www.masaischool.com/",
+        location: "Bengaluru",
+        workingLocation: "Remote",
+        timeline: "2022 - 2023",
+    },
+    {
+        id: 2,
+        degree: "Higher Secondary Education",
+        institution: "Rajgram Vivekananda Hindu Vidyalaya",
+        institutionSite: "https://g.co/kgs/D9GbXj2",
+        location: "Bankura",
+        timeline: "2019 - 2021",
+    },
 ]
